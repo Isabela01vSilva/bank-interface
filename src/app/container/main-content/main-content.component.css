@@ -1,14 +1,12 @@
 .main {
   display: flex;
   flex-direction: row;
-  margin-left: 200px;
-  background-color: brown;
+  margin-left: 120px;
   padding: 20px;
   height: 100%;
 }
 
 .div1 {
-  background-color: yellow;
   height: 800px;
   width: 70%;
   margin-right: 10px;

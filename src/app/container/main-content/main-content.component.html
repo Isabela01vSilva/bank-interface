@@ -1,12 +1,22 @@
 <div class="main">
   <div class="div1">
+
+<label for="month">Referente ao mês:</label>
+<select id="month" [(ngModel)]="selectedMonth">
+  <option *ngFor="let month of months" [value]="month">{{ month }}</option>
+</select>
+
+<p>Mês selecionado: {{ selectedMonth }}</p>
+
+
+
     <app-cards-panel></app-cards-panel>
     <app-earning-report-chart></app-earning-report-chart>
     <app-transaction-history></app-transaction-history>
   </div>
   <div class="div2">
     <div>
-     <app-img-card></app-img-card>
+      <app-img-card></app-img-card>
     </div>
     <div>
       <app-todo-list></app-todo-list>
