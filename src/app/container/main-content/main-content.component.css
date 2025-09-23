@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  background-color: brown;
+  padding: 20px;
+  height: 100%;
+}
+
+.div1 {
+  background-color: yellow;
+  height: 800px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.div2 {
+  background-color: cadetblue;
+  height: 800px;
+  width: 30%;
+}

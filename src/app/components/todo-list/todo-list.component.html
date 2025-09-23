@@ -1,0 +1,12 @@
+<div class="todo-list">
+  <h2>Todo List</h2>
+  <ul>
+    <li *ngFor="let task of tasks">
+      <div class="task-info">
+        <span class="title">{{ task.title }}</span>
+        <span class="date">{{ task.date }} at {{ task.time }}</span>
+      </div>
+      <span class="amount">${{ task.amount }}</span>
+    </li>
+  </ul>
+</div>

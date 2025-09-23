@@ -1,0 +1,39 @@
+.todo-list {
+  max-width: 400px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.amount {
+  font-weight: bold;
+  color: #333;
+}

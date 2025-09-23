@@ -1,0 +1,23 @@
+<div class="transaction-history">
+  <h3>Histórico de Transações</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tx of transactions">
+        <td>{{ tx.date }}</td>
+        <td>{{ tx.description }}</td>
+        <td [ngClass]="{'income': tx.type === 'income', 'expense': tx.type === 'expense'}">
+          {{ tx.amount | currency:'BRL':'symbol':'1.2-2' }}
+        </td>
+        <td>{{ tx.type === 'income' ? 'Receita' : 'Despesa' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
